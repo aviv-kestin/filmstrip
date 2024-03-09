@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+.film-strip {
+    display: flex;
+    flex-direction: row; 
+    overflow-x: scroll; 
+    width: 100%; 
+}
+
+.scene {
+    flex: 0 0 auto; 
+    overflow: visible;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.scene img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    font-size: 1em; 
+    margin-top: 10px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .text {
+        font-size: 1.2em; /* Default font size */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .text {
+        font-size: 1.4em; /* Adjust font size for medium screens */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .text {
+        font-size: 1.6em; /* Adjust font size for large screens */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text {
+        font-size: 1.8em; /* Adjust font size for extra large screens */
+    }
+}
